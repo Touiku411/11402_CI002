@@ -3,4 +3,4 @@
 ## 這個程式碼庫的用途是什麼？
 ## 發布後，您的 GitHub Pages 網站鏈接
 ## 關於您如何整理文件/資料夾的說明
-href = "https://github.com/yfhuang/YZUCSE_CI002"
+https://github.com/yfhuang/YZUCSE_CI002
