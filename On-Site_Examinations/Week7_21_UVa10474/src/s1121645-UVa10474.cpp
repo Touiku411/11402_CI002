@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<set>
+#include<algorithm>
 
 using namespace std;
 
@@ -13,22 +14,20 @@ int main()
     int cnt = 1;
     while(cin >> N >> Q && (N != 0 && Q != 0)){
         cout << "CASE# " << cnt++ << ":\n";
-        multiset<int> s;
+        vector<int> vec(N);
         for(int i = 0; i < N; ++i){
-            int x; cin >> x;
-            s.insert(x);
+            cin >> vec[i];
         }
-        while (Q--)
-        {
-            int d; cin >> d;
-            auto it = s.find(d);
-            if(it != s.end()){
-                cout << d << " found at " << distance(s.begin(), it) + 1<< '\n';
+        sort(vec.begin(), vec.end());
+        while(Q--){
+            int x; cin >> x;
+            auto it = lower_bound(vec.begin(), vec.end(), x);
+            if(it != vec.end() && *it == x){
+                cout << x << " found at " << it - vec.begin() + 1 << '\n'; 
             }
             else{
-                cout << d << " not found\n";
+                cout << x << " not found\n";
             }
         }
-        
     }
 }
