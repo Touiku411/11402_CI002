@@ -1,6 +1,8 @@
 #include<iostream>
 #include<vector>
-#include<cmath>
+#include<list>
+#include<map>
+#include<algorithm>
 using namespace std;
 
 
@@ -12,13 +14,7 @@ int main(){
     while(T--){
         int depth, A, B;
         cin >> depth >> A >> B;
-        int size = (1ULL << depth) - 1;
-        vector<int> tree(size);
-        if(A * 2 > size || B * 2 > size){
-            cout << size << endl;
-            continue;
-        }
-        
+        int size = (1ULL << depth) - 1;        
         int m = max(A, B);
         int d = 1;
         int temp = m;
