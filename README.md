@@ -1,6 +1,5 @@
 # 11402_CI002
-## 簡短的自我介紹
-## 這個程式碼庫的用途是什麼？
-## 發布後，您的 GitHub Pages 網站鏈接
-## 關於您如何整理文件/資料夾的說明
+## 1121645
+## C++實習(二)？
+## Touiku411.github.io
 https://github.com/yfhuang/YZUCSE_CI002
